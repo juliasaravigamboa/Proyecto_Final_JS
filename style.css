@@ -1,0 +1,34 @@
+body{
+    background-color: white;
+}
+.centrado{text-align:center; padding:8px;}
+
+.imgTamanio {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+  }
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+#contenedor > div {
+    width: 50%;
+  }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

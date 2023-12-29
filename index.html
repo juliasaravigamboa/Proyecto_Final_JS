@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Proyecto Fianl JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <script src="./distrito.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  <div id="container" class="centrado">
+    <h1>Septima Seccion Electoral</h1>
+    <h2>Provincia de Buenos Aires</h2>
+  </div>
+  
+  <div>
+    <h2>Clima Buenos Aires</h2>
+    <h3 id="temperatura"></h3>
+    <img id="imagen-clima" src="" alt="">
+  </div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/seccion-electoral.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/2955_1162464636.jpg"  class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Estacion_Tapalqué_1080.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/generalalvear1-1024x427.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/Olavarría-Cartel-1024x683.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/roque-perez-buenos-airesjpg.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/saladillo-2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/san-carlos-de-bolivar-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/TRES.jpg" class="d-block w-100" alt="...">
+      </div>
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div>
+    <h3>Participacion Ciudadana</h3>
+  </div>
+  <div>
+    <h4>Elija los distritos que desea sumar</h4>
+  </div>
+  <table id="table">
+    <thead class="thead-dark">
+      <tr id="trId">
+        <th>Nombre 
+          <select name="nombreDistrito" id="selectDistrito">
+            <!-- The options will be filled with JS -->
+          </select>
+        </th>
+        <th>Votantes</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <!-- The rows will be filled with JS -->
+    </tbody>
+    <tfoot>
+      <tr>
+        <td></td>
+        <td id="totalVotos"></td>
+      </tr>
+    </tfoot>
+  </table> 
+</button>
+<button id="reset-button">
+    Vaciar
+</button>
+  <script src="./main.js"></script> 
+  </body>
+  </html>
